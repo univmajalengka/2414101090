@@ -1,0 +1,276 @@
+/* Reset default browser */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #1b4332;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+/* Navbar */
+nav {
+    background-color: #2d6a4f;
+    text-align: center;
+    padding: 15px 0;
+}
+
+nav a {
+    color: white;
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #95d5b2;
+}
+
+/* Section */
+section {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+section h2 {
+    text-align: center;
+    color: #1b4332;
+    margin-bottom: 30px;
+}
+
+/* Lake Cards */
+.lake {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.lake-card {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    width: 300px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.lake-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.lake-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.lake-card h3 {
+    margin: 15px 0 10px 0;
+    color: #2d6a4f;
+}
+
+.lake-card p {
+    padding: 0 15px 20px 15px;
+}
+
+/* Tips & Contact List */
+#visit ul, #contact ul {
+    list-style: none;
+    margin-top: 20px;
+    padding-left: 0;
+}
+
+#visit li, #contact li {
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+
+/* ==============================
+   CONTACT SECTION (UPDATED)
+   ============================== */
+#contact {
+    padding: 60px 20px;
+    background: #e9f5ef; /* soft green background */
+    text-align: center;
+    border-radius: 15px;
+}
+
+#contact h2 {
+    font-size: 2rem;
+    color: #1b4332;
+    margin-bottom: 10px;
+}
+
+#contact p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.contact-box {
+    display: inline-block;
+    background: #ffffff;
+    padding: 25px 35px;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    transition: 0.3s ease;
+}
+
+.contact-box:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.contact-box li {
+    font-size: 1.1em;
+    margin: 10px 0;
+    color: #333;
+}
+
+.contact-box strong {
+    color: #2d6a4f;
+}
+
+/* Footer */
+footer {
+    background-color: #2d6a4f;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .lake-card {
+        width: 90%;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+}
+/* Tips Section (Estetik & Tengah) */
+#visit {
+    background: #f1f8f5;
+    padding: 60px 20px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+#visit h2 {
+    font-size: 2rem;
+    color: #1b4332;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+#visit ul {
+    list-style: none;
+    padding: 0;
+    max-width: 600px;
+    margin: auto;
+}
+
+#visit li {
+    font-size: 1.1rem;
+    background: #ffffff;
+    margin: 12px 0;
+    padding: 15px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    color: #2d6a4f;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* efek hover tipis */
+#visit li:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+}
+/* About Section Estetik */
+.about-section {
+    background: #ffffff;
+    padding: 70px 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 8px 22px rgba(0,0,0,0.08);
+    margin-top: 40px;
+}
+
+.about-section h2 {
+    font-size: 2rem;
+    color: #1b4332;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.about-section p {
+    max-width: 800px;
+    margin: auto;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #444;
+    padding: 10px 20px;
+}
+
+/* Biar kelihatan premium ada efek hover halus */
+.about-section:hover {
+    transform: translateY(-3px);
+    transition: 0.3s ease;
+    box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+}
+
+/* Popup background */
+.img-popup {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+/* Gambar yang diperbesar */
+.img-popup img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 12px;
+    box-shadow: 0 0 20px #000;
+}
+
+/* Tutup popup */
+.img-popup.close {
+    cursor: pointer;
+}
